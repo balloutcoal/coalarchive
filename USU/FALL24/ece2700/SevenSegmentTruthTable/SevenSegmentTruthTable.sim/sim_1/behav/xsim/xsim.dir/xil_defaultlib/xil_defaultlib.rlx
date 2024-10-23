@@ -1,0 +1,8 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.srcs/sim_1/new/SevenSegmentTest.v,1726111301,verilog,,,,SevenSegmentTest,,,,,,,,
+C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.srcs/sources_1/new/SevenSegmentCombinational.v,1726697153,verilog,,C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.srcs/sources_1/new/SevenSegmentTop.v,,SevenSegmentCombinational,,,,,,,,
+C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.srcs/sources_1/new/SevenSegmentTop.v,1726698052,verilog,,C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.srcs/sim_1/new/SevenSegmentTest.v,,SevenSegmentTop,,,,,,,,
