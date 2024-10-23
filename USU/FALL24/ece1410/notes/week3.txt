@@ -1,0 +1,99 @@
+Classes in C++
+	Procedural Programming vs OOP (Object Oriented Programming)
+		Procedural Programming
+			Code is divided into multiple procedures
+		OOP
+			OOP was the main reason C++ was created
+			Principles of OOP
+				Encapsulation
+					The form of information hiding and abstraction
+					Data and functions that act on that data are located in the class
+					Ideal: seperate the interface/implementation to use the former without knowledge of the latter
+				Inheritance
+					Allows us to create and define new classes from existing classes
+					Allows us to re use code
+						Faster implementation time
+						Fewer errors
+						Easier to maintain/update
+				Polymorphism
+					
+	Classes
+		Morphing from struct
+			typedef struct date{
+				int month;
+				int day;
+				int year;
+			}DATE;
+			REMOVE TYPEDEF AND CHANGE STRUCT TO CLASS
+				Convention, capitalize class letter
+			You can add a function to the class
+				Nothing is passed into the function, it already has access to the class variables
+			class Date{
+				public:
+					int month;
+					int day;
+					int year;
+					void OutputMonth();
+			};
+		Basics
+			OutputMonth() Definition
+				void Date: :OutputMonth(){
+					switch(m_month){
+					case 1: Jaunuary;
+					case 2: Febuary;
+					case 3: March;
+					/* etc */
+					default:
+						cout << "Error in Date" << endl;
+					}
+				}
+			Using the Date Class
+				Date today;
+				cout << "ask for date MM DD YYYY" << endl;
+				cin >> today.m_day >> today.m_month >> today.m_year;
+		Access
+			In our definition of the Date class, everything was public
+			Access Specifiers (specify for members inside of class)
+			Example
+				class Date{
+				public:
+					int m_month;
+				private: (if not specificed defaults to private)
+					int m_day;
+				protected:
+					int m_year;
+				};
+				Public
+					Anything has access to a Date object and all public member variables/functions
+					Not normally used for variables, but used for most functions
+					need to have at least one item be public
+				Private
+					Private member variables and functions can only be accessed by member functions of the class
+					Default option if not specified
+				Protected
+					Talk about later on
+		Member Function Types
+			Acessor functions
+				Convention: start with Get, allow retrieval of private data members
+			Mutator functions
+				Convention: start with Set, allow changing of private data members
+			Auxiliary functions
+				Provide support for the operations
+				Public if called outside the function
+				Private/Protected if called inside
+		Constructors
+			class Date{
+			public:
+				void OutputMonth();
+				Date (int m, int d, int y);
+			private:
+				int m_month;
+				int m_day;
+				int m_year;
+			};
+			Constructor Definition
+				Date: :Date(int m, int d, int y){
+					code yada yada basically translates m_month/m_day/m_year into int d m or y
+				}
+		Overloading
+	Livecoding
