@@ -13,9 +13,10 @@ module MUXarraytestbench(   );
         i = 0;
         j = 0;
         k = 0;
-        for(i = 0; i <= 3; i = i + 1)begin
-            for(j = 0; j <= 3; j = j + 1)begin
-                for(k = 0; k <= 1; k = k + 1)begin
+        #100;
+        for(i = 0; i < 16; i = i + 1)begin
+            for(j = 0; j < 16; j = j + 1)begin
+                for(k = 0; k < 2; k = k + 1)begin
                     #10;
                     a = i;
                     b = j;
