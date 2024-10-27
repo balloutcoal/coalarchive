@@ -17,6 +17,4 @@ module NewSevenSegment(
     assign seg[5] = |(d & 16'h8EFB);
     assign seg[6] = |(d & 16'h3EF7);
     
-    wire NAN = (wxyz[3] & (wxyz[2] | wxyz[1]));
-    assign wxyz = ~(d&~{7{NAN}}); 
 endmodule
