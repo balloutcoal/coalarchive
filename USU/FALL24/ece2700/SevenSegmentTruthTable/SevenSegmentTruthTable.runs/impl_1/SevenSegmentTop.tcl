@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.runs/impl_1/SevenSegmentTop.tcl"
+  variable script "C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/SevenSegmentTruthTable/SevenSegmentTruthTable.runs/impl_1/SevenSegmentTop.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,7 +125,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 3
   open_checkpoint SevenSegmentTop_routed.dcp
-  set_property webtalk.parent_dir C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/SevenSegmentTruthTable/SevenSegmentTruthTable.cache/wt [current_project]
 set_property TOP SevenSegmentTop [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
