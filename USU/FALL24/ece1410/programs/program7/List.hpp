@@ -22,6 +22,7 @@ class List{
 		
 		void insert(T value){ //Adds to list creating new node
 			Node<T>* newNode = new Node<T>(value);
+			newNode->setNext(nullptr);
 			if(head == nullptr){
 				head = newNode; //Insert as first node
 			}else{
@@ -62,7 +63,7 @@ class List{
 			Node<T>* prev = nullptr;
 			while(curr){
 				if(curr->getData() == data){
-					if(prev != nullptr){
+					if(prev == nullptr){
 						head = curr->getNext();
 					}else{
 						prev->setNext(curr->getNext());
