@@ -20,19 +20,22 @@ class Queue{
 			back->setNext(newNode);
 		}
 		back = newNode;
-		if(head == nullptr){
+		if(!head){
 			head = newNode;
 		}
 		size++;
 	}
 	
 	T dequeue(){
+		if (isEmpty()) { // Check if the queue is empty
+        	throw std::out_of_range("Queue is empty, cannot dequeue");
+    	}
 		Node<T>* temp = head;
 		head = head->getNext();
 		T value = temp->getData();
 		delete temp;
 		size--;
-		if(size == 0){
+		if(!head){
 			back = nullptr;
 		}
 		return value;
@@ -43,7 +46,10 @@ class Queue{
 	}
 	
 	void reset(){
+		if(!head) return;
 		while(head){
+			cout << "Resetting queue, head address: " << head << endl;
+			cout << "Current head: " << head << ", next: " << head->getNext() << endl;
 			Node<T>* temp = head;
 			head = head->getNext();
 			delete temp;

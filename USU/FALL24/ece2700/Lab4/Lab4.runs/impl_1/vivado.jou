@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 16 16:44:57 2024
+# Process ID: 21708
+# Current directory: C:/Users/coal/Documents/ECE2700/Lab4/Lab4.runs/impl_1
+# Command line: vivado.exe -log decoder3_8.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source decoder3_8.tcl -notrace
+# Log file: C:/Users/coal/Documents/ECE2700/Lab4/Lab4.runs/impl_1/decoder3_8.vdi
+# Journal file: C:/Users/coal/Documents/ECE2700/Lab4/Lab4.runs/impl_1\vivado.jou
+# Running On: DESKTOP-751E0DS, OS: Windows, CPU Frequency: 4292 MHz, CPU Physical cores: 12, Host memory: 24899 MB
+#-----------------------------------------------------------
+source decoder3_8.tcl -notrace

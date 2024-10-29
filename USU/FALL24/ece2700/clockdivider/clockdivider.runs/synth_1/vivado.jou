@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Sep 11 16:05:12 2024
+# Process ID: 1688
+# Current directory: C:/Users/coal/Documents/ECE2700/clockdivider/clockdivider.runs/synth_1
+# Command line: vivado.exe -log ClockDivider.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ClockDivider.tcl
+# Log file: C:/Users/coal/Documents/ECE2700/clockdivider/clockdivider.runs/synth_1/ClockDivider.vds
+# Journal file: C:/Users/coal/Documents/ECE2700/clockdivider/clockdivider.runs/synth_1\vivado.jou
+# Running On: DESKTOP-751E0DS, OS: Windows, CPU Frequency: 4292 MHz, CPU Physical cores: 12, Host memory: 24899 MB
+#-----------------------------------------------------------
+source ClockDivider.tcl -notrace

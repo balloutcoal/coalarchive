@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 16 22:54:19 2024
+# Process ID: 7724
+# Current directory: C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.runs/synth_1
+# Command line: vivado.exe -log SevenSegmentTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SevenSegmentTop.tcl
+# Log file: C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.runs/synth_1/SevenSegmentTop.vds
+# Journal file: C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.runs/synth_1\vivado.jou
+# Running On: DESKTOP-751E0DS, OS: Windows, CPU Frequency: 4292 MHz, CPU Physical cores: 12, Host memory: 24899 MB
+#-----------------------------------------------------------
+source SevenSegmentTop.tcl -notrace
