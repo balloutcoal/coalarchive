@@ -22,41 +22,42 @@ class Account
 	public:
 
 		virtual void update() = 0;
-		virtual void transaction(float trans) = 0;											//2 functions for accounts
-		string getName();
+		virtual void transaction(float amount) = 0;	//2 functions for accounts
+		string getName() const;
 		
-		int getAccNum(); 
-		float getBalance();
-		float getInterest();
+		int getAccNum() const; 
+		float getBalance() const;
+		float getInterest() const;
 		
-		Account* getNext();
+		Account* getNext() const;
 		void setNext(Account* _n);
-		Account(int acc_number, string acc_name, float balance, float interest); // Constructor
+		Account(int acc_number, string acc_name, float balance, float interest)
+			: acc_number(acc_number), acc_name(acc_name), balance(balance), interest(interest), next(nullptr) {} // Constructor
 		
 };
 
-string Account::getName(){
+string Account::getName() const{
 	return acc_name;
 }
 
-int Account::getAccNum(){
+int Account::getAccNum() const{
 	return acc_number;
 }
 
-float Account::getBalance(){
+float Account::getBalance() const{
 	return balance;
 }
 
-float Account::getInterest(){
+float Account::getInterest() const{
 	return interest;
 }
 
-Account* Account::getNext(){
+Account* Account::getNext() const{
 	return next;
 }
 
 void Account::setNext(Account* _n){
-	this->next = next;
+	this->next = _n;
 }
 
 #endif

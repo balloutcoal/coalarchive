@@ -31,7 +31,7 @@ TEST(Bank, All)
   cout << bank[3]->getBalance() << endl;
   
 }
-/*
+
 TEST(Bank, Savings)
 {
   std::ifstream fin("bankSavings.txt");
@@ -108,4 +108,3 @@ int main(int argc, char **argv)
   int potato;
   cin >> potato;
 }
-*/

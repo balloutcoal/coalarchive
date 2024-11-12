@@ -27,7 +27,8 @@ class Bank {
 	public:
 		Bank(); // Constructor
 		void account(char f_letter, int acc_number, string acc_name, float balance, float interest);//creates an account
-		int process(string line); //processes the input file text
+		void updateTransactions(char f_letter, int acc_number, int balance); //for t and u inputs
+		void process(string line); //processes the input file text
 		Account* findNumber(int acc_num); // Finds the account Number
 		int getCount()
 		{
@@ -48,7 +49,7 @@ class Bank {
 Bank::Bank() : head(nullptr), end(nullptr), accounts(0) {}
 
 void Bank::account(char f_letter, int acc_number, string acc_name, float balance, float interest){
-	Account* new_account = nullptr; //Newis  account's pointer
+	Account* new_account = nullptr; //New account's pointer
 	
 	switch(f_letter){ //Checks for account type
 		case 'c':
@@ -59,8 +60,9 @@ void Bank::account(char f_letter, int acc_number, string acc_name, float balance
 			break;
 		case 'l':
 			new_account = new Loan(acc_number, acc_name, balance, interest);
-		default:
 			break;
+		default:
+			return;
 	}
 	
 	if(new_account){ //If a new account is created
@@ -74,27 +76,49 @@ void Bank::account(char f_letter, int acc_number, string acc_name, float balance
 	}
 }
 
-int Bank::process(string line){ //Processs file input lines
+void Bank::updateTransactions(char f_letter, int acc_number, int balance){
+	Account* acc = findNumber(acc_number);
+	if(acc){
+		if(f_letter == 't'){
+			acc->transaction(balance);
+		}else if (f_letter == 'u'){
+			acc->update();
+		}
+	}
+}
+
+void Bank::process(string line){ //Processs file input lines
 	stringstream ss(line);
 	char f_letter;
 	int acc_number;
 	string acc_name;
-	float balance, interest;
-	
-	ss >> f_letter >> acc_number >> acc_name >> balance >> interest;
-	
-	account(f_letter, acc_number, acc_name, balance, interest)
+	float balance;
+	float interest;
+	switch(f_letter){ //if the input line doesn't provide a name
+		case 't':
+			ss >> f_letter >> acc_number >> balance;
+			updateTransactions(f_letter, acc_number, interest);
+			break;
+		case 'u':
+			ss >> f_letter >> acc_number;
+			updateTransactions(f_letter, acc_number, 0);
+			break;
+		default:
+			ss >> f_letter >> acc_number >> acc_name >> balance >> interest;
+			account(f_letter, acc_number, acc_name, balance, interest);
+			break;
+	}
 }
 
 Account* Bank::findNumber(int acc_num){
 	Account* current = head; //Start at front of linked list
 	while(current != nullptr){
-		if(current->getAccountNumber() == acc_num){ //If account numbers match
+		if(current->getAccNum() == acc_num){ //If account numbers match
 			return current;
 		}
 		current = current->getNext(); //Move down list
 	}
-	return 0; //If account number does not exist
+	return nullptr; //If account number does not exist
 }
 
 #endif
