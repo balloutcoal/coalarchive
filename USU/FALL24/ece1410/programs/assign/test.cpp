@@ -68,6 +68,7 @@ TEST(IntBST, BigSearch)
   EXPECT_EQ(bst.search(72), "Found: root(50)->right(75)->left(51)->right(74)->left(52)->right(73)->left(53)->right(72)");
 }
 
+
 TEST(IntBST, Remove)
 {
 
@@ -89,6 +90,7 @@ TEST(IntBST, Remove)
  
   EXPECT_TRUE(true);
 }
+
 
 TEST(StringBST, Insert)
 {
@@ -175,6 +177,7 @@ TEST(StringBST, Remove)
 
   EXPECT_TRUE(true);
 }
+
 
 int main(int argc, char **argv)
 {
