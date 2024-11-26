@@ -1,4 +1,4 @@
- #ifndef BST_HPP
+#ifndef BST_HPP
 #define BST_HPP
 #include "Node.hpp"
 #include <iostream>
