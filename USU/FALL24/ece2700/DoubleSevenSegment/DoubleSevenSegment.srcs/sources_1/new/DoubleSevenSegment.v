@@ -4,7 +4,7 @@ module DoubleSevenSegment #(parameter PRESCALER = 50000)(
     input clk,
     input [3:0] sw1, sw2,
     output [6:0] seg,
-    output [1:0] an
+    output [3:0] an
 );
     
     wire sel;
@@ -20,6 +20,6 @@ module DoubleSevenSegment #(parameter PRESCALER = 50000)(
    
     assign seg = ~(sel ? tseg2 : tseg1);
     
-    assign an = {~sel, sel};
+    assign an = {2'b11, ~sel, sel};
     
 endmodule

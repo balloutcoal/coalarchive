@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/rotateLED/rotateLED.srcs/sources_1/imports/ece2700/clockdivider/clockdivider.srcs/sources_1/new/ClockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/rotateLED/rotateLED.srcs/sources_1/new/DFF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/rotateLED/rotateLED.srcs/sources_1/new/DRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/rotateLED/rotateLED.srcs/sources_1/imports/ece2700/DFF_dataflow/DFF_dataflow.srcs/sources_1/new/dLatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dLatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/rotateLED/rotateLED.srcs/sources_1/new/rotateLED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotateLED
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/rotateLED/rotateLED.srcs/sim_1/new/RotateTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RotateTest

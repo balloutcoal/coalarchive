@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/coal/Documents/ECE2700/SevenSegmentTruthTable/SevenSegmentTruthTable.runs/synth_1'
+HD_PWD='C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/SevenSegmentTruthTable/SevenSegmentTruthTable.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

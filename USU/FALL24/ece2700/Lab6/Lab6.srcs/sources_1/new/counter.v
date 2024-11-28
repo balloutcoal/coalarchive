@@ -1,0 +1,12 @@
+`timescale 1ns / 1ps
+
+module counter(
+    input clk, incr, rst,
+    output reg [7:0] q
+    );
+    
+    always @(posedge clk)begin
+        if(rst) q <= 0;
+        else if (incr) q <= q + 1;
+    end
+endmodule

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DoubleSevenSegment.srcs/sources_1/imports/ECE2700/clockdivider/clockdivider.srcs/sources_1/new/ClockDivider.v" \
+"../../../../DoubleSevenSegment.srcs/sources_1/new/DoubleSevenSegment.v" \
+"../../../../DoubleSevenSegment.srcs/sources_1/new/NewSevenSegment.v" \
+"../../../../DoubleSevenSegment.srcs/sources_1/imports/ECE2700/Lab4/Lab4.srcs/sources_1/new/decoder3_8.v" \
+"../../../../DoubleSevenSegment.srcs/sources_1/new/decoder4_16.v" \
+"../../../../DoubleSevenSegment.srcs/sim_1/new/DoubleSevenSegmentTopTest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

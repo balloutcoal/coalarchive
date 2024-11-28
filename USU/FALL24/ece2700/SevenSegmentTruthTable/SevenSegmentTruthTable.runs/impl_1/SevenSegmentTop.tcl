@@ -124,6 +124,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
   open_checkpoint SevenSegmentTop_routed.dcp
   set_property webtalk.parent_dir C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/SevenSegmentTruthTable/SevenSegmentTruthTable.cache/wt [current_project]
 set_property TOP SevenSegmentTop [current_fileset]

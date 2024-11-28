@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/11/2024 05:35:35 PM
-// Design Name: 
-// Module Name: SevenSegmentTest
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module SevenSegmentTest;
     //inputs
@@ -35,6 +15,8 @@ module SevenSegmentTest;
         .an(an),
         .sw(sw)
     );
+    
+    
     
     initial begin
         //init inputs

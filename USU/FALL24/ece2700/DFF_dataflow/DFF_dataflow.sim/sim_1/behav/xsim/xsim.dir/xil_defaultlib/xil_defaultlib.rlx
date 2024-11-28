@@ -1,0 +1,11 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sim_1/new/DFF_test.v,1730332246,verilog,,,,DFF_test,,,,,,,,
+C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sim_1/new/JKKTest.v,1730931259,verilog,,,,JKKTest,,,,,,,,
+C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sources_1/new/DFFDataflow.v,1730925245,verilog,,C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sources_1/new/latchDataflow.v,,DFFDataflow,,,,,,,,
+C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sources_1/new/JKFF.v,1730931216,verilog,,C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sources_1/new/newLatch.v,,JKFF,,,,,,,,
+C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sources_1/new/latchDataflow.v,1730330901,verilog,,C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sim_1/new/DFF_test.v,,latchDataflow,,,,,,,,
+C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sources_1/new/newLatch.v,1730334275,verilog,,C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.srcs/sim_1/new/JKKTest.v,,newLatch,,,,,,,,

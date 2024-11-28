@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Thu Oct 24 18:24:15 2024
+| Date         : Wed Oct 30 15:35:29 2024
 | Host         : DESKTOP-751E0DS running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file DoubleSevenSegment_timing_summary_routed.rpt -pb DoubleSevenSegment_timing_summary_routed.pb -rpx DoubleSevenSegment_timing_summary_routed.rpx -warn_on_violation
 | Design       : DoubleSevenSegment
@@ -41,7 +41,7 @@ Timing Summary Report
 
 Rule       Severity  Description                    Violations  
 ---------  --------  -----------------------------  ----------  
-TIMING-18  Warning   Missing input or output delay  9           
+TIMING-18  Warning   Missing input or output delay  11          
 
 Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
 

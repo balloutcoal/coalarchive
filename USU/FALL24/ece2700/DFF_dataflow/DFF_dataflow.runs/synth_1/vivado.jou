@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Nov  6 16:18:00 2024
+# Process ID: 23360
+# Current directory: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.runs/synth_1
+# Command line: vivado.exe -log JKFF.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source JKFF.tcl
+# Log file: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.runs/synth_1/JKFF.vds
+# Journal file: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DFF_dataflow/DFF_dataflow.runs/synth_1\vivado.jou
+# Running On: DESKTOP-751E0DS, OS: Windows, CPU Frequency: 4292 MHz, CPU Physical cores: 12, Host memory: 24899 MB
+#-----------------------------------------------------------
+source JKFF.tcl -notrace

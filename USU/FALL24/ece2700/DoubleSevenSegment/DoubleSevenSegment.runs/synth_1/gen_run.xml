@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1729815776" LaunchIncrCheckpoint="$PPRDIR/../../../../../ECE2700/DoubleSevenSegment/DoubleSevenSegment.srcs/utils_1/imports/synth_1/MUXarray.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730324036" LaunchIncrCheckpoint="$PPRDIR/../../../../../ECE2700/DoubleSevenSegment/DoubleSevenSegment.srcs/utils_1/imports/synth_1/MUXarray.dcp">
   <File Type="PA-TCL" Name="DoubleSevenSegment.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="DoubleSevenSegment_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="DoubleSevenSegment_reports.tcl"/>

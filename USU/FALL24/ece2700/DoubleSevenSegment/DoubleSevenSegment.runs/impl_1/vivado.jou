@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Oct 24 18:24:39 2024
-# Process ID: 6844
+# Start of session at: Wed Oct 30 15:36:26 2024
+# Process ID: 20392
 # Current directory: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DoubleSevenSegment/DoubleSevenSegment.runs/impl_1
 # Command line: vivado.exe -log DoubleSevenSegment.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DoubleSevenSegment.tcl -notrace
 # Log file: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/DoubleSevenSegment/DoubleSevenSegment.runs/impl_1/DoubleSevenSegment.vdi
