@@ -6,7 +6,6 @@ class Sorts
 {
   public:
   void bubble(int*, int);
-  
   void insertion(int*, int);
   void quick(int*, int);
   
