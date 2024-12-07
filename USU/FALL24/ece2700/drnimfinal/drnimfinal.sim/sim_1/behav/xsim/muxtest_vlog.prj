@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../drnimfinal.srcs/sources_1/imports/new/ClockDivider.v" \
+"../../../../drnimfinal.srcs/sources_1/new/comparator.v" \
+"../../../../drnimfinal.srcs/sources_1/new/subtractor.v" \
+"../../../../drnimfinal.srcs/sources_1/new/controltop.v" \
+"../../../../drnimfinal.srcs/sources_1/imports/new/mux.v" \
+"../../../../drnimfinal.srcs/sources_1/new/ledarray.v" \
+"../../../../drnimfinal.srcs/sources_1/new/encoder4to2.v" \
+"../../../../drnimfinal.srcs/sim_1/new/comparatortest.v" \
+"../../../../drnimfinal.srcs/sim_1/new/encodertest.v" \
+"../../../../drnimfinal.srcs/sim_1/new/subtractortest.v" \
+"../../../../drnimfinal.srcs/sim_1/new/muxtest.v" \
+"../../../../drnimfinal.srcs/sim_1/new/ledarraytest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

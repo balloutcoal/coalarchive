@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Dec  6 16:44:13 2024
+# Process ID: 14932
+# Current directory: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/drnimfinal/drnimfinal.runs/impl_1
+# Command line: vivado.exe -log controltop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source controltop.tcl -notrace
+# Log file: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/drnimfinal/drnimfinal.runs/impl_1/controltop.vdi
+# Journal file: C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/drnimfinal/drnimfinal.runs/impl_1\vivado.jou
+# Running On: DESKTOP-751E0DS, OS: Windows, CPU Frequency: 4292 MHz, CPU Physical cores: 12, Host memory: 24899 MB
+#-----------------------------------------------------------
+source controltop.tcl -notrace
