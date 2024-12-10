@@ -6,7 +6,7 @@ module encodertest(     );
     wire [1:0] out;
     
     reg clk;
-    encoder4to2 DUT(.sw(sw), .en(en), .out(out));
+    encoder4to2 DUT(.clk(clk), .sw(sw), .en(en), .out(out));
     
     initial begin
         clk = 0;

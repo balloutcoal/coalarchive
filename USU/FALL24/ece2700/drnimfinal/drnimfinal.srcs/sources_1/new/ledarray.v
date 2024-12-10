@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module ledarray(
-    input [5:0] sw,
+    input [4:0] sw,
     input clk,
     output reg [15:0] led
     );

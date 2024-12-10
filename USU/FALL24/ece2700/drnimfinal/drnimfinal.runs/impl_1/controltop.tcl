@@ -115,8 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -124,8 +122,8 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part_repo_paths {C:/Users/coal/AppData/Roaming/Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
@@ -142,7 +140,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/drnimfinal/drnimfinal.runs/synth_1/controltop.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/drnimfinal/drnimfinal.srcs/constrs_1/imports/ece2700/Basys3_Master.xdc
+  read_xdc {{C:/Users/coal/Documents/coalarchive/USU/FALL24/ece2700/drnimfinal/drnimfinal.srcs/constrs_1/imports/ece2700/Basys3_Master .xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

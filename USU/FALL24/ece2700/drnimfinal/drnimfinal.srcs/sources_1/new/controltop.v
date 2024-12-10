@@ -4,12 +4,12 @@
 // Engineer: Cole Thorpe
 // 
 // Create Date: 12/03/2024 07:07:55 PM
-// Design Name: 
+// Design Name: DR NIM FINAL
 // Module Name: controltop
-// Project Name: 
-// Target Devices: 
+// Project Name: DR NIM FINAL
+// Target Devices: basys 3 fpga
 // Tool Versions: 
-// Description: 
+// Description: I HATE VIVADO!!!!
 // 
 // Dependencies: 
 // 
@@ -21,57 +21,63 @@
 
 
 module controltop(
-    input[5:0] sw, //in start set amount of marbles, in play set as player turn
-    input start, confirm, clk, //start/rst game and confirm player turn and clock
-    output reg [4:0] pwin, bwin, //flags for bot win or player win
+    input [4:0] sw, //player turn and start switch
+    input start, btnC, mclk, nobot, //start/rst game and confirm player turn and clock
     output wire [15:0] led //array of leds on board
     );
-    reg [5:0] marbles;
-    wire [5:0] marbles_result; //marble count and the from each turn
-    reg [2:0] state, playturn;
-    wire [2:0] encodedplayturn;
+    reg [2:0] state;
+    reg[4:0] marbles;
     
-    subtractor #(.N(6)) subturn(.a({3'b000, playturn}), .b(marbles), .out(marbles_result));
-    subtractor #(.N(3)) subbot(.a(), .b(), .out());
-    ledarray leds(.sw(marbles), .clk(clk), .led(led));
-    encoder4to2 encoder(.sw(sw[2:0]), .en(start), .out(encodedplayturn[1:0]));
+    //led behavior
+    ledarray leds(.clk(mclk), .sw(marbles), .led(led));
     
-    always @(posedge clk)begin
-        if(~start) state = 3'b000;
+    //button behavior
+    wire confirm;
+    debouncer debounceconfirm(.b(btnC), .clk(mclk), .d(confirm));
+    
+    //player behavior
+    wire [1:0] play;
+    encoder4to2 encodeturn(.clk(mclk), .sw({1'b0, sw[2:0]}), .en(start), .out(play));
+    
+    //bot behavior 
+    reg [1:0] botplay;
+    always @(*)begin
+        botplay = 4 - play;
+    end
+    
+    //math behavior 
+    //TODO: ADD PROPER SUBTRACTORS FOR MARBLES IF BUILT IN MODULES AREN'T ALLOWED
+    
+    //delay behavior
+    //TODO: ADD DELAY INBETWEEN STATES TO IMPROVE READABILITY AND REMOVE TURN PLAYING TWICE OCCASIONALY
+    
+    //state behavior
+    always @(posedge mclk)begin
+        if(~start) state <= 3'b000;
         case(state)
-            3'b000: //wait for start
+            3'b000: //IDLE
                 if(start)begin
-                    marbles = sw;
-                    state = 3'b001;
-                end else state = 3'b000;
-            3'b001: //wait for player turn
-                if(sw > 0 && sw < 4 && confirm && sw <= marbles) state = 3'b010;
-                else state = 3'b001;
-            3'b010: begin//play out player turn
-                playturn = encodedplayturn;
-                if(playturn > 0 && sw < 4 && confirm && sw <= marbles)begin
-                    marbles = marbles_result;
-                    state = 3'b100;
-                end else state = 3'b001;
+                    marbles <= sw[4:0];
+                    state <= 3'b001;
+                end
+            3'b001: //WAIT
+                if(confirm && play < 4 && play > 0 && play <= marbles) state <= 3'b010;
+            3'b010: begin //PLAYEPLAYER
+                marbles <= marbles - play;
+                state = 3'b100;
             end
-            3'b011: begin //calculate and play out bot move
-                playturn = 4 - playturn;
-                marbles = marbles_result;
+            3'b011: begin //PLAYBOT
+                marbles <= marbles - botplay;
                 state = 3'b101;
             end
-            3'b100: //check if player wins
-                if(marbles == 0)begin
-                    pwin = pwin + 1;
-                    state = 3'b110;
-                end else state = 3'b011;
-            3'b101: //check if bot wins
-                if(marbles == 0)begin
-                    bwin = bwin + 1;
-                    state = 3'b110;
-                end else state = 3'b001;
-            3'b110: //win state, wait for reset
-                if(!start) state = 3'b000;
-                else state = 3'b110;
+            3'b100: //CHECKPLAYER
+                if(marbles == 0) state <= 3'b110;
+                else if(nobot) state <= 3'b001;
+                else state <= 3'b011;
+            3'b101: //CHECKBOT
+                state <= (marbles == 0) ? 3'b110 : 3'b001;
+            3'b110: //WIN
+                state <= start ? 3'b110 : 3'b000;
         endcase
     end
 endmodule

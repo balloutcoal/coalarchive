@@ -1,14 +1,17 @@
 `timescale 1ns / 1ps
 
 module subtractor #(parameter N = 6)(
+    input clk,
     input [N-1:0] a, b,
-    output wire [N-1:0] out,
-    output wire negative
+    output reg [N-1:0] out,
+    output reg negative
     );
-    wire [N:0] result;
+    reg [N:0] result;
     
-    assign result = {1'b0, a} - {1'b0, b};
-    
-    assign out = result[N-1:0];
-    assign negative = result[N];
+    always @(posedge clk)begin
+        result = {1'b0, a} - {1'b0, b};
+        
+        out <= result[N-1:0];
+        negative <= result[N];
+    end
 endmodule

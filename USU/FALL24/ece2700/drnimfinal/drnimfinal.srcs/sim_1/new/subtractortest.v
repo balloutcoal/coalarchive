@@ -6,7 +6,7 @@ module subtractortest(  );
     wire negative;
     
     reg clk;
-    subtractor DUT(.a(a), .b(b), .out(out), .negative(negative));
+    subtractor #(.N(4)) DUT(.a(a), .b(b), .out(out), .negative(negative));
     
     initial begin
         clk = 0;
