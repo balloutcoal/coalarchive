@@ -1,80 +1,37 @@
 {
   "main": {
-    "id": "d98b2188816378f6",
+    "id": "d69382af2766ff05",
     "type": "split",
     "children": [
       {
-        "id": "352f5cfd5d87eede",
+        "id": "4a973ef8b99bda7c",
         "type": "tabs",
         "children": [
           {
-            "id": "4072cebee4c4b723",
+            "id": "faea5c8445505c83",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "5bca054bbe09d124",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Basic Console.md",
-                "mode": "source",
-                "source": false
-              },
               "icon": "lucide-file",
-              "title": "Basic Console"
-            }
-          },
-          {
-            "id": "f3c579f8fa92ecba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GIT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GIT"
-            }
-          },
-          {
-            "id": "935ce4410c65512d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Graphics Drivers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Graphics Drivers"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ed06beccfe9930f3",
+    "id": "ed3e5df87e21d33d",
     "type": "split",
     "children": [
       {
-        "id": "ca3bbf375450ba80",
+        "id": "ceb8d03760c02e59",
         "type": "tabs",
         "children": [
           {
-            "id": "b1fc6908d867f4d0",
+            "id": "a23615ba497d3d56",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -86,7 +43,7 @@
             }
           },
           {
-            "id": "5ff243b4c067fd22",
+            "id": "8ea12b4788add475",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -103,7 +60,7 @@
             }
           },
           {
-            "id": "379cca12cbfb34d7",
+            "id": "bb7615a1606bb9ac",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -119,20 +76,19 @@
     "width": 300
   },
   "right": {
-    "id": "b60b4b8e41f98432",
+    "id": "38f29b2d35ca56bd",
     "type": "split",
     "children": [
       {
-        "id": "d2fee286461a33da",
+        "id": "cf2f71afc3901281",
         "type": "tabs",
         "children": [
           {
-            "id": "6dc999e2e59b5b9d",
+            "id": "481ad61642d8e52e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GIT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,25 +98,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for GIT"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "2dc3446d6fe8a24b",
+            "id": "32c9caaae6c78780",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GIT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from GIT"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "0f7e75673cdfaabb",
+            "id": "8d56e3202d3d18e4",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -173,15 +128,13 @@
             }
           },
           {
-            "id": "a7666d132f09a80a",
+            "id": "012ca56e83e0d417",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "GIT.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of GIT"
+              "title": "Outline"
             }
           }
         ]
@@ -201,12 +154,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "935ce4410c65512d",
+  "active": "faea5c8445505c83",
   "lastOpenFiles": [
-    "GIT.md",
-    "Basic Console.md",
-    "Graphics Drivers.md",
-    "GRAPHICS",
-    "Welcome.md"
+    "SPRING25/ece2250"
   ]
 }

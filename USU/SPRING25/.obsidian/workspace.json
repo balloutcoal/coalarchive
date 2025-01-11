@@ -1,80 +1,41 @@
 {
   "main": {
-    "id": "d98b2188816378f6",
+    "id": "35459af2646bd285",
     "type": "split",
     "children": [
       {
-        "id": "352f5cfd5d87eede",
+        "id": "c9cf2d804f361a3f",
         "type": "tabs",
         "children": [
           {
-            "id": "4072cebee4c4b723",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "5bca054bbe09d124",
+            "id": "f9139b7baa00be65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Console.md",
+                "file": "ece2250/Week 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Console"
-            }
-          },
-          {
-            "id": "f3c579f8fa92ecba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GIT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GIT"
-            }
-          },
-          {
-            "id": "935ce4410c65512d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Graphics Drivers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Graphics Drivers"
+              "title": "Week 1"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "ed06beccfe9930f3",
+    "id": "922b6613992bc8da",
     "type": "split",
     "children": [
       {
-        "id": "ca3bbf375450ba80",
+        "id": "d94f8aa15ca95b7a",
         "type": "tabs",
         "children": [
           {
-            "id": "b1fc6908d867f4d0",
+            "id": "9687e055fe8ef2f4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -86,7 +47,7 @@
             }
           },
           {
-            "id": "5ff243b4c067fd22",
+            "id": "992845a48955c5e2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -103,7 +64,7 @@
             }
           },
           {
-            "id": "379cca12cbfb34d7",
+            "id": "64ebe10174cc743b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -119,20 +80,20 @@
     "width": 300
   },
   "right": {
-    "id": "b60b4b8e41f98432",
+    "id": "8e1831ddcc6c1210",
     "type": "split",
     "children": [
       {
-        "id": "d2fee286461a33da",
+        "id": "afe16b6ff5d1749c",
         "type": "tabs",
         "children": [
           {
-            "id": "6dc999e2e59b5b9d",
+            "id": "d0b519b21cbab05f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GIT.md",
+                "file": "ece2250/Week 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,25 +103,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for GIT"
+              "title": "Backlinks for Week 1"
             }
           },
           {
-            "id": "2dc3446d6fe8a24b",
+            "id": "59dac1fc07c1aa23",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GIT.md",
+                "file": "ece2250/Week 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from GIT"
+              "title": "Outgoing links from Week 1"
             }
           },
           {
-            "id": "0f7e75673cdfaabb",
+            "id": "65cdc303a1193050",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -173,15 +134,15 @@
             }
           },
           {
-            "id": "a7666d132f09a80a",
+            "id": "eddde1ad6356824c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "GIT.md"
+                "file": "ece2250/Week 1.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of GIT"
+              "title": "Outline of Week 1"
             }
           }
         ]
@@ -201,12 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "935ce4410c65512d",
+  "active": "9687e055fe8ef2f4",
   "lastOpenFiles": [
-    "GIT.md",
-    "Basic Console.md",
-    "Graphics Drivers.md",
-    "GRAPHICS",
-    "Welcome.md"
+    "ece3700/Week 1.md",
+    "ece2250/Week 1.md",
+    "F2BD75EE-DA01-4C92-BD4B-4EFD7334D1D9.heic"
   ]
 }

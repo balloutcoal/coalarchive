@@ -7,24 +7,26 @@ cd is to change the directory you're currently in, ls is to peek into your curre
 Pretty self explanatory for looking through your files and will be essential always
 #### Terminal:
 ```
-cd directory/directory/.../
+$ cd directory/directory/.../
 ```
 Leave no directory to check current directory
 ```
-ls directory/directory/.../
+$ ls directory/directory/.../
 ```
 #### Notes:
 Starting directories with / will send you to root 
 ```
-cd /
+$ cd /
 ```
 Starting directories with ~/ will send you to home,
 ```
-cd ~/
+$ cd ~/
 ```
 ## Package updating
 
 ## Battery Conservation
+### auto-cpufreq
+This approach to laptop battery conservation is more simple than the other method I've tried out. Personally from each settings I haven't noticed much change except for TLP might be better given the freedom of options. auto-cpufreq is a good choice still, being easy to operate and coming in as a desktop app instead of just the terminal.
 ### TLP
 Because Linux is so power intensive compared to windows, TLP helps conserve battery life automatically so you don't have to dig into processes
 #### Documentation - <https://linrunner.de/tlp/usage/tlp.html>
@@ -34,15 +36,15 @@ tlp start
 ```
 Check
 ```
-tlp-stat - s
+$ tlp-stat - s
 ```
 Switch between Plugged and Battery mode
 ```
-tlp bat | ac
+$ tlp bat | ac
 ```
 Enable/disable bluetooth/nfc/wifi/wwan (choose on, off, or toggle)
 ```
-<name> on | off | toggle
+$ <name> on | off | toggle
 ```
 #### Notes
 90% of the commands that require tlp in the beginning will need root permissions so write sudo before each command
