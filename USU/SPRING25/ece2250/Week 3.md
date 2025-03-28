@@ -35,5 +35,5 @@
 * $V = i_1R_1 = i_2R_2$
 	* $i_S = i_1 + i_2$
 	* $\frac{V_S}{Req}=i_S$
-	* $Req = \frac{1}{\frac{1}{R_1}+frac{1}{R_2}+...+\frac{1}{R_N}}=R_1||R_2$
+	* $Req = \frac{1}{\frac{1}{R_1}+\frac{1}{R_2}+...+\frac{1}{R_N}}=R_1||R_2||...||R_N$
 * Always less than the smallest resistor in the combination
